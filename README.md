@@ -320,6 +320,45 @@ pip install pandas scikit-learn joblib fastapi uvicorn streamlit requests
   - Binary prediction: 1 returned, 0 not returned
   - Return risk probability
 
+## Deployment
+
+### Quick Deploy to Render
+
+This project is configured for easy deployment to [Render](https://render.com) with both backend (FastAPI) and frontend (React) services.
+
+**Prerequisites:**
+- Push your code to GitHub
+- Create a Render account
+- Ensure `models/model.pkl` exists in your repository
+
+**Deploy Steps:**
+
+1. **Using Blueprint (Automated):**
+   - Push code to GitHub: `git push origin main`
+   - Go to Render Dashboard → New → Blueprint
+   - Connect your GitHub repository
+   - Render will auto-detect `render.yaml` and deploy both services
+   - Configure environment variables (see below)
+
+2. **Environment Variables:**
+   - **Backend:** Set `FRONTEND_URL` to your frontend URL
+   - **Frontend:** Set `VITE_API_URL` to your backend URL
+
+3. **Access Your App:**
+   - Frontend will be at: `https://returnai-frontend.onrender.com`
+   - Backend API at: `https://returnai-backend.onrender.com`
+
+**For detailed deployment instructions, troubleshooting, and production tips, see [DEPLOYMENT.md](DEPLOYMENT.md)**
+
+### Local Development Setup
+
+Run the setup script to create environment files:
+```bash
+python setup_local.py
+```
+
+Then update the `.env` files with your local configuration.
+
 ## Contributors :
 1. Amritanshu Kumar - [Github ID](https://github.com/Amrit1005)
 2. Utsav Gupta
