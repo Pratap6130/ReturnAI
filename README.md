@@ -357,10 +357,3 @@ Run the setup script to create environment files:
 python setup_local.py
 ```
 
-Then update the `.env` files with your local configuration.
-
-## Contributors :
-1. Amritanshu Kumar - [Github ID](https://github.com/Amrit1005)
-2. Utsav Gupta
-3. Aanchal Doshi - [Github ID](https://github.com/Aanchal0008)
-4. Medhansh Singhal 
