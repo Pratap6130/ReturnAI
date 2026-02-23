@@ -1,0 +1,129 @@
+{
+  "trained_at_utc": "2026-02-22T18:48:22.011143+00:00",
+  "data": {
+    "row_count": 50000,
+    "positive_rate": 0.2,
+    "train_rows": 32000,
+    "valid_rows": 8000,
+    "test_rows": 10000
+  },
+  "threshold_optimization": {
+    "objective": "cost",
+    "fp_cost": 1.0,
+    "fn_cost": 3.0,
+    "thresholds": {
+      "accuracy": 0.5349999999999999,
+      "f1": 0.48999999999999994,
+      "cost": 0.5099999999999999
+    },
+    "optimization_scores": {
+      "accuracy": 0.800125,
+      "f1": 0.338785046728972,
+      "cost": -0.583
+    },
+    "deployed_threshold": 0.5099999999999999
+  },
+  "test_metrics": {
+    "at_0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.5844,
+      "balanced_accuracy": 0.5304375,
+      "precision": 0.2248596222562532,
+      "recall": 0.4405,
+      "f1": 0.2977357215275431,
+      "tn": 4963,
+      "fp": 3037,
+      "fn": 1119,
+      "tp": 881,
+      "roc_auc": 0.55500409375,
+      "pr_auc": 0.24222941850447888
+    },
+    "at_best_accuracy": {
+      "threshold": 0.5349999999999999,
+      "accuracy": 0.8,
+      "balanced_accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tn": 8000,
+      "fp": 0,
+      "fn": 2000,
+      "tp": 0,
+      "roc_auc": 0.55500409375,
+      "pr_auc": 0.24222941850447888
+    },
+    "at_best_f1": {
+      "threshold": 0.48999999999999994,
+      "accuracy": 0.2995,
+      "balanced_accuracy": 0.5245,
+      "precision": 0.20911310008136696,
+      "recall": 0.8995,
+      "f1": 0.33933792322927475,
+      "tn": 1196,
+      "fp": 6804,
+      "fn": 201,
+      "tp": 1799,
+      "roc_auc": 0.55500409375,
+      "pr_auc": 0.24222941850447888
+    },
+    "at_deployed_threshold": {
+      "threshold": 0.5099999999999999,
+      "accuracy": 0.7629,
+      "balanced_accuracy": 0.5285625,
+      "precision": 0.2990249187432286,
+      "recall": 0.138,
+      "f1": 0.1888470749230243,
+      "tn": 7353,
+      "fp": 647,
+      "fn": 1724,
+      "tp": 276,
+      "roc_auc": 0.55500409375,
+      "pr_auc": 0.24222941850447888
+    }
+  },
+  "baseline": {
+    "majority_class_accuracy": 0.8
+  },
+  "top_feature_importance": [
+    {
+      "feature": "product_category",
+      "importance": 0.22975318133831024
+    },
+    {
+      "feature": "user_gender",
+      "importance": 0.2007983773946762
+    },
+    {
+      "feature": "product_price",
+      "importance": 0.08113585412502289
+    },
+    {
+      "feature": "order_value",
+      "importance": 0.07881602644920349
+    },
+    {
+      "feature": "discount_pct",
+      "importance": 0.07645463943481445
+    },
+    {
+      "feature": "discount_applied",
+      "importance": 0.07486645877361298
+    },
+    {
+      "feature": "user_age",
+      "importance": 0.06972517818212509
+    },
+    {
+      "feature": "payment_method",
+      "importance": 0.06464546173810959
+    },
+    {
+      "feature": "order_quantity",
+      "importance": 0.06203456223011017
+    },
+    {
+      "feature": "shipping_method",
+      "importance": 0.061770252883434296
+    }
+  ]
+}
